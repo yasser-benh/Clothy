@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <aside class="left">
+        <img src="https://res.cloudinary.com/dtrvdcebd/image/upload/v1708266042/Clothy/lkcwsxmhvjw1jdiwmetm.png">
+        <h1>Clothy</h1>
+            <div class="header_links">
+                <a href="Homepage.html" class="link">Home</a>
+                <a href="#" class="link">Login</a>
+                <a href="#">Pages</a>
+                <a href="#">Shop</a>
+                <a href="#">Projects</a>
+                <a href="#">News</a>
+            </div>
+        </aside>
+        <aside class="right">
+            <img src="https://res.cloudinary.com/dtrvdcebd/image/upload/v1708266043/Clothy/hj0vb3b4xulhutwzj42x.png">
+                <div class="cart">
+                <img src="https://res.cloudinary.com/dtrvdcebd/image/upload/v1708266043/Clothy/q1pbhfwzuy1u8xqq6cbd.png">
+                <p>Cart (0)</p>
+            </div>
+        </aside>
+    </header>
+    <section class="banner_2">
+        <img src="https://res.cloudinary.com/dtrvdcebd/image/upload/v1708266049/Clothy/tsjuoq7yti3kchyq1dmt.png">
+        <h1>SHOP SINGLE</h1>
+    </section>
+
+    <section id="details"></section>
+
+    <section class="info">
+        <form>
+            <button class="btn_desc">Product Descrption</button>
+            <button class="btn_info">Additional Info</button>
+        </form>
+        <p>Welcome to the world of natural and organic. Here you can discover the bounty of nature. We have grown on the principles of health, ecology, and care. We aim to give our customers a healthy chemical-free meal for perfect nutrition. It offers about 8–10% carbs. Simple sugars — such as glucose and fructose — make up 70% and 80% of the carbs in raw.</p>
+    </section>
+
+    <section class="bottom_banner">
+        
+        <img src="https://res.cloudinary.com/dtrvdcebd/image/upload/v1708266045/Clothy/l04wim0gq4l6c3rk5p32.jpg">
+        <div>
+        <h4>Subscribe to our Newslatter</h4>
+            <form for="email">
+                <input type="email" id="email" placeholder="Your Email Address">
+                <button>Subscribe</button>
+            </form>
+        </div>
+        
+    </section>
+    <section class="footer">
+        <div class="left_side">
+            <h3>Contact Us</h3>
+            <div class="email">
+                <h5>Email</h5>
+                <p>needhelp@organia.com</p>
+            </div>
+            <div class="phone">
+                <h5>Phone</h5>
+                <p>22 222 222</p>
+            </div>
+            <div class="add">
+                <h5>Address</h5>
+                <p>88 road, broklyn strees,USA</p>
+            </div>
+        </div>
+        <div class="center">
+            <div class="bottom_logo">
+                <img src="https://res.cloudinary.com/dtrvdcebd/image/upload/v1708266042/Clothy/lkcwsxmhvjw1jdiwmetm.png">
+                <h3>Clothy</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non illo doloribus voluptatem eaque eligendi nihil totam, nostrum harum consectetur, sequi ex dolores dolore cupiditate minima! Debitis eveniet explicabo deserunt tempora.</p>
+            <div class="media">
+                <img src="https://res.cloudinary.com/dtrvdcebd/image/upload/v1708266042/Clothy/tttvl4eevaocktv9owtu.png">
+                <img src="https://res.cloudinary.com/dtrvdcebd/image/upload/v1708266042/Clothy/wjehgngpzquvqvivxaub.png">
+                <img src="https://res.cloudinary.com/dtrvdcebd/image/upload/v1708266043/Clothy/ykcuoeblwy0xd1ovhtxa.png">
+                <img src="https://res.cloudinary.com/dtrvdcebd/image/upload/v1708266042/Clothy/bxhauxlwbvqyp8joj6fj.png">
+            </div>
+        </div>
+        <div class="right_side">
+            <h3>Utility Pages</h3>
+            <p>Style Guide</p>
+            <p>404 Not Found</p>
+            <p>Password Protected</p>
+            <p>Licences</p>
+            <p>Changelog</p>
+        </div>
+    </section>
+<footer>
+    <hr class="footer_hr">
+    <p>Copyright © <b>Organick</b>| Designed by <b>VictorFlow</b> Templates - Powered by <b>Webflow</b></p>
+</footer>
+    <script src="app.js"></script>
+
+    <script>
+        const getId = window.location.search
+        console.log(getId)
+        const urlParams = new URLSearchParams(getId)
+        const id = urlParams.get("id")
+
+        singleProduct(id)
+    </script>
+</body>
+</html>
